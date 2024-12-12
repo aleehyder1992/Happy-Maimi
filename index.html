@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" href="assets/logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project 5</title>
+  </head>
+  <body>
+    <!---Header-->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+              <h2 class="text-dark">Happy Hour:Maimi</h2>
+              </a>
+
+              <!-- Toggler/collapsibe Button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      id="navbarDropdown1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Demos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li>
+                        <a class="dropdown-item" href="#">City Travel Guide</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Country Travel Guide</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Restaurant Listing</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Business Listing</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Workplace Listing</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Health Medical Listing</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      id="navbarDropdown1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Listings
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li>
+                        <a class="dropdown-item" href="#">Search Layout</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">City Layout</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Listing Detail Layout</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Listing Action Detail</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Owner Page</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Pricing</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Sign Up</a>
+                  </li>
+                </ul>
+                <!-- Button -->
+                <button class="btn head-btn pb-2">
+                  <div class="d-flex">
+                    <div class="icon">
+                      <i class="bi bi-plus"></i>
+                    </div>
+                    <div class="btn-text pt-1">Add Place</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!---Hero Section-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <section class="hero">
+            <div class="container-fluid">
+              <div
+                id="myCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-6 hero-text">
+                        <h6 class="text-danger">DRINK,FOOD & ENJOY</h6>
+                        <h1>
+                          Discover the<br />
+                          Best Restaurant
+                        </h1>
+                        <form class="d-flex hero-form">
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-1"
+                              for="inputGroupSelect01"
+                              >Where</label
+                            >
+                            <select
+                              class="form-select hero-form-2 text-muted"
+                              id="inputGroupSelect01"
+                            >
+                              <option selected>Your City</option>
+                              <option value="1">Chicago</option>
+                              <option value="2">New York</option>
+                              <option value="3">Los Angeles</option>
+                              <option value="3">San Deigo</option>
+                              <option value="3">San Fransisco</option>
+                            </select>
+                          </div>
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-3"
+                              for="inputGroupSelect02"
+                              >Find</label
+                            >
+                            <select
+                              class="form-select hero-form-2"
+                              id="inputGroupSelect02"
+                            >
+                              <option selected>Ex: Fast Food...</option>
+                              <option value="1">American</option>
+                              <option value="2">Italian</option>
+                              <option value="3">Fast Food</option>
+                              <option value="3">Japan</option>
+                              <option value="3">Mexican</option>
+                              <option value="3">Vegetarian</option>
+                            </select>
+                            <span>
+                              <button class="btn btn-form" type="submit">
+                                <i class="bi bi-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 hero-image">
+                        <img
+                          src="assets/hero-1.jpg"
+                          class="img-fluid"
+                          alt="Image 1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-6 hero-text">
+                        <h6 class="text-danger">DRINK,FOOD & ENJOY</h6>
+                        <h1>
+                          Discover the<br />
+                          Best Restaurant
+                        </h1>
+                        <form class="d-flex hero-form">
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-1"
+                              for="inputGroupSelect01"
+                              >Where</label
+                            >
+                            <select
+                              class="form-select hero-form-2 text-muted"
+                              id="inputGroupSelect01"
+                            >
+                              <option selected>Your City</option>
+                              <option value="1">Chicago</option>
+                              <option value="2">New York</option>
+                              <option value="3">Los Angeles</option>
+                              <option value="3">San Deigo</option>
+                              <option value="3">San Fransisco</option>
+                            </select>
+                          </div>
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-3"
+                              for="inputGroupSelect02"
+                              >Find</label
+                            >
+                            <select
+                              class="form-select hero-form-2"
+                              id="inputGroupSelect02"
+                            >
+                              <option selected>Ex: Fast Food...</option>
+                              <option value="1">American</option>
+                              <option value="2">Italian</option>
+                              <option value="3">Fast Food</option>
+                              <option value="3">Japan</option>
+                              <option value="3">Mexican</option>
+                              <option value="3">Vegetarian</option>
+                            </select>
+                            <span>
+                              <button class="btn btn-form" type="submit">
+                                <i class="bi bi-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 hero-image">
+                        <img
+                          src="assets/hero-2.jpg"
+                          class="img-fluid"
+                          alt="Image 2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-6 hero-text">
+                        <h6 class="text-danger">DRINK,FOOD & ENJOY</h6>
+                        <h1>
+                          Discover the<br />
+                          Best Restaurant
+                        </h1>
+                        <form class="d-flex hero-form">
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-1"
+                              for="inputGroupSelect01"
+                              >Where</label
+                            >
+                            <select
+                              class="form-select hero-form-2 text-muted"
+                              id="inputGroupSelect01"
+                            >
+                              <option selected>Your City</option>
+                              <option value="1">Chicago</option>
+                              <option value="2">New York</option>
+                              <option value="3">Los Angeles</option>
+                              <option value="3">San Deigo</option>
+                              <option value="3">San Fransisco</option>
+                            </select>
+                          </div>
+                          <div class="input-group mb-3">
+                            <label
+                              class="input-group-text bg-white fw-bold hero-form-3"
+                              for="inputGroupSelect02"
+                              >Find</label
+                            >
+                            <select
+                              class="form-select hero-form-2"
+                              id="inputGroupSelect02"
+                            >
+                              <option selected>Ex: Fast Food...</option>
+                              <option value="1">American</option>
+                              <option value="2">Italian</option>
+                              <option value="3">Fast Food</option>
+                              <option value="3">Japan</option>
+                              <option value="3">Mexican</option>
+                              <option value="3">Vegetarian</option>
+                            </select>
+                            <span>
+                              <button class="btn btn-form" type="submit">
+                                <i class="bi bi-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6 hero-image">
+                        <img
+                          src="assets/hero-3.jpg"
+                          class="img-fluid"
+                          alt="Image 3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <!---Card slider 1-->
+   <section class="card-1">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-dark text-left fw-bold">Popular Restaurants in Town</h2>
+        <div class="card-1">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Henry Carroll</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class="rounded-pill"
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Alex Ross</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >Av. Manoel Roque, 265 - Alvorada, Videira - SC,
+                          89562-036, Brazil</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-3.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class="rounded-pill"
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Thomas L.Friedman</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-4.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class="rounded-pill"
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Dale Carnegie</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-5.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div class="position-absolute top-0 start-0 m-2">
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class=""
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">Los Angeles</h6>
+                        <h4 class="m-2">Switches</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-6.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class=""
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">Los Angeles</h6>
+                        <h4 class="m-2">Harvey</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class=""
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Henry Carroll</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                    <div class="card-test text-center position-relative">
+                      <img
+                        src="assets/card-2.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div
+                        class="card-img-icon position-absolute top-0 end-0 m-2"
+                      >
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                      <div
+                        class="card-img-icon position-absolute top-0 start-0 m-2"
+                      >
+                        <img
+                          src="assets/fork-and-knife-svgrepo-com.svg"
+                          width="30px"
+                          class=""
+                        />
+                      </div>
+                      <div class="card-body card-text p-1 bg-white row">
+                        <p class="text-muted float-start m-2">
+                          Dinner,Drinks,Salad,Seafood
+                        </p>
+                        <h6 class="m-2">New York</h6>
+                        <h4 class="m-2">Henry Carroll</h4>
+                        <i class="m-2 bi bi-geo-alt"
+                          >1007 Fifth Ave #101 San Diego, CA 92101</i
+                        >
+                        <span class="d-flex">
+                          <i class="card-1-icon bi bi-star">5.0</i>
+                          <small class="ms-2">(1 Review)</small>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev direction-icons-1"
+              data-bs-slide="prev"
+              data-bs-target="#carouselExampleIndicators"
+              type="button"
+            >
+              <span aria-hidden="true" class="">
+                <i class="bi bi-chevron-left"></i>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next direction-icons-2"
+              data-bs-slide="next"
+              data-bs-target="#carouselExampleIndicators"
+              type="button"
+            >
+              <span aria-hidden="true" class="">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+   
+   </section>
+
+    <!---Card slider 2-->
+    <section class="card-2">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-dark text-left fw-bold">Search By Cuisine</h2>
+          <h6 class="text-muted text-left">
+            Explore restaurants and cafes by your favorite cuisine
+          </h6>
+          <div class="card-2">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators"></div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-1.jpg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">American (10)</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-2.jpeg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">Fast Food (11)</h4>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-3.jpeg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">Italian (5)</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-4.jpeg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">Japan (3)</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-5.jpeg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">Mexican (7)</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 mb-5">
+                      <a href="">
+                        <div class="card-test text-center position-relative">
+                          <img
+                            src="assets/card-2-6.jpeg"
+                            class="rounded-pill"
+                            alt="..."
+                            width="150px"
+                          />
+
+                          <div class="card-body card-text p-1 row">
+                            <h4 class="m-2 text-center">Pizza (6)</h4>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FEATURE CITIES-->
+    <section class="feature-cities">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-dark text-left fw-bold">Featured Cities</h1>
+          <h6 class="text-muted text-left">
+            Explore restaurants & cafes by locality
+          </h6>
+        </div>
+      </div>
+
+      <div class="container feature-cities">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div
+              class="chicago"
+              style="background-image: url(assets/chicago.jpeg)"
+            >
+              <h2>Chicago</h2>
+              <p>5 Places</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div
+              class="los-angeles"
+              style="background-image: url(assets/los-angeles.jpeg)"
+            >
+              <h2>Los Angeles</h2>
+              <p>6 Places</p>
+            </div>
+            <br />
+            <div
+              class="new-york"
+              style="background-image: url(assets/new-york.jpeg)"
+            >
+              <h2>New York</h2>
+              <p>5 Places</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div
+              class="los-angeles"
+              style="background-image: url(assets/san-diego.jpeg)"
+            >
+              <h2>San Deigo</h2>
+              <p>6 Places</p>
+            </div>
+            <br />
+            <div
+              class="new-york"
+              style="background-image: url(assets/san-fancisco.jpeg)"
+            >
+              <h2>San Francisco</h2>
+              <p>5 Places</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Restaurant-->
+    <section class="restoo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div
+              class="restoo"
+              style="background-image: url('assets/restoo.jpeg')"
+            >
+              <h1>Restaurateurs Join Us</h1>
+              <p>
+                Join the more than 10,000 restaurants which fill seats and<br />
+                manage reservations with Golo.
+              </p>
+              <a href="">
+                <button class="btn btn-danger rounded pill text-white">
+                  Learn More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Testimonials-->
+    <section class="testimonials">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-dark text-left fw-bold">People Talking About Us</h2>
+          <div id="carouselExampleControls" class="carousel carousel slide testi-slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner testi-inner">
+              <div class="carousel-item active">
+                <div class="container-sm d-flex">
+                <div class="row">
+                  <div class="col-lg-5 col-md-5 col-sm-12 test-card">
+                    <div class=" d-flex">
+                     <div class="test-img m-3">
+                      <img src="assets/kevin.jpg" class=" rounded-pill" alt="...">
+                      <div
+                        class="test-img-icon"
+                      >
+                        <i class="bi bi-quote"></i>
+                      </div>
+
+                      
+                     </div>
+                     <div class="test-text">
+                      <p class="text-muted "> Excellent theme! I’ve been searching for a simple, customizable, and stylish directory theme for many years!</p>
+                      <h5 class="fw-bold mt-3 ">Kevin
+                        <span>
+                          <p class="text-muted float-end">Photographer</p>
+                        </span>
+                      </h5>
+                     </div>
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-12"></div>
+                
+                  <div class="col-lg-5 col-md-5 col-sm-12 test-card">
+                    <div class=" d-flex">
+                     <div class="test-img m-3">
+                      <img src="assets/cristina.jpg" class=" rounded-pill" alt="...">
+                      <div
+                        class="test-img-icon"
+                      >
+                        <i class="bi bi-quote"></i>
+                      </div>
+                     </div>
+                     <div class="test-text">
+                      <p class="text-muted "> Amazing work. I wonder how to change the main menu to the Home 2 which I found much more interesting!</p>
+                      <h5 class="fw-bold mt-3 ">Cristina
+                        <span>
+                          <p class="text-muted float-end">Food Blogger</p>
+                        </span>
+                      </h5>
+                     </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-sm d-flex">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 test-card">
+                      <div class=" d-flex">
+                       <div class="test-img m-3">
+                        <img src="assets/kevin.jpg" class=" rounded-pill" alt="...">
+                        <div
+                        class="test-img-icon"
+                      >
+                        <i class="bi bi-quote"></i>
+                      </div>
+                       </div>
+                       <div class="test-text">
+                        <p class="text-muted "> Excellent theme! I’ve been searching for a simple, customizable, and stylish directory theme for many years!</p>
+                        <h5 class="fw-bold mt-3 ">Kevin
+                          <span>
+                            <p class="text-muted float-end">Photographer</p>
+                          </span>
+                        </h5>
+                       </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12"></div>
+                  
+                    <div class="col-lg-5 col-md-5 col-sm-12 test-card">
+                      <div class=" d-flex">
+                       <div class="test-img m-3">
+                        <img src="assets/john-doe.jpg" class=" rounded-pill" alt="...">
+                        <div
+                        class="test-img-icon"
+                      >
+                        <i class="bi bi-quote"></i>
+                      </div>
+                       </div>
+                       <div class="test-text">
+                        <p class="text-muted ">There are very few themes in Themeforest that work 99% smoothly, and one of them is "Golo" Simply The Best !!!</p>
+                        <h5 class="fw-bold mt-3 ">Joe Doe
+                          <span>
+                            <p class="text-muted float-end">Traveller</p>
+                          </span>
+                        </h5>
+                       </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  </div>
+              </div>
+              
+              <button
+              class="carousel-control-prev testi-prev"
+              data-bs-slide="prev"
+              data-bs-target="#carouselExampleIndicators"
+              type="button"
+            >
+              <span aria-hidden="true" class="">
+                <i class="bi bi-chevron-left"></i>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next testi-next"
+              data-bs-slide="next"
+              data-bs-target="#carouselExampleIndicators"
+              type="button"
+            >
+              <span aria-hidden="true" class="">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+              
+        </div>
+      </div>
+    </section>
+
+
+    <!---Blogs-->
+    <section class="blog">
+      <div class="container">
+        <div class="row blog-1">
+          <h2 class="text-dark text-left fw-bold">From Our Blog</h2>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/blog-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">CULTURETIPS & TRICKS</h6>
+                <p class="card-text">America’s 38 Essential Restaurants</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/blog-2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">FOOD & NEWSTAKE A BREAK
+                </h6>
+                <p class="card-text">Socca with whipped feta and tomato salad</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/blog-3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">TIPS & TRICKS</h6>
+                <p class="card-text">Deep dish s’mores bowls for two</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center  mt-5">
+        <button class="btn btn-danger text-white rounded-pill">VIEW MORE</button>
+      </div>
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-sm-12">
+            <a class="navbar-brand" href="#">
+              <h2 class="text-dark">Happy Hour:Maimi</h2>
+              </a>
+            <p class="text-dark text-left mt-2 mb-2">Discover amazing things to do everywhere you go.</p>
+            <div class="d-flex">
+              <img class="me-2" src="assets/app-store-big.png" width="100px"/>
+              <img src="assets/google-play-big.png" width="100px"/>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-12 d-block">
+            <h5 class="text-left text-dark">Company</h5>
+            <div class="footer-links">
+              <a href="#">About Us</a>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Partner</a></li>
+                
+              </div>
+            
+          
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-12">
+            <h5 class="text-left text-dark">Support</h5>
+            <div class="footer-links">
+              <a href="#">Get In Touch</a>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Live Chat</a></li>
+                <li><a href="#">How It Works</a></li>
+                
+              </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-12">
+            <h5 class="text-left text-dark">Contact Us</h5>
+            <div class="footer-links">
+              <a href="#">Email: support@domain.com</a>
+                <li><a href="#">Phone: 1 (00) 832 2342</a></li>
+                
+                
+              </div>
+
+           <div class="footer-icons d-flex">
+             <a href=""> <i class="bi bi-facebook me-3"></i></a>
+              <a href=""><i class="bi bi-twitter me-3"></i></a>
+              <a href=""><i class="bi bi-instagram me-3"></i></a>
+              <a href="">  <i class="bi bi-youtube"></i></a>
+            
+           </div>
+              
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
